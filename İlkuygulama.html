@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+
+
+
+            $("#container1").hide();
+
+            $("#container2").hide();
+
+
+            $(".hide_btn").click(function () {
+
+                $("#container1").fadeOut();
+
+            })
+
+            $(".show_btn").click(function () {
+
+                $("#container1").fadeIn();
+
+            })
+
+            $(".slideToggle_btn").click(function () {
+
+                $("#container1").fadeToggle();
+
+            })
+
+            $(".show_btn2").click(function () {
+               $("#container2").slideDown();
+            })
+
+            $(".hide_btn2").click(function () {
+                $("#container2").slideUp();
+            })
+
+
+            $(".slideToggle_btn2").click(function () {
+                $("#container2").slideToggle();
+            })
+
+
+
+
+
+        })
+    </script>
+</head>
+<body>
+<button class="show_btn">İçerik göster</button>
+<button class="hide_btn">İçerik gizle</button>
+<button class="slideToggle_btn">Göster/Gizle</button>
+
+
+<p id="container1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquam aut dolore doloribus earum eos exercitationem expedita ipsum iusto minus nesciunt, nisi numquam officiis quaerat recusandae reiciendis saepe veniam.</p>
+<hr>
+<button class="show_btn2">İçerik göster</button>
+<button class="hide_btn2">İçerik gizle</button>
+<button class="slideToggle_btn2">Göster/Gizle</button>
+<p id="container2">aaaaLorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquam aut dolore doloribus earum eos exercitationem expedita ipsum iusto minus nesciunt, nisi numquam officiis quaerat recusandae reiciendis saepe veniam.</p>
+
+</body>
+</html>
